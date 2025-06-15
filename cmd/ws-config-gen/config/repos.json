@@ -1,0 +1,19 @@
+{
+	"repos": [
+		{
+			"name": "stai-tools",
+			"git-repo": "git@github.com:mj41/stai-tools.git",
+			"type": "git-repo"
+		},
+		{
+			"name": "stai-tools-src",
+			"git-repo": "git@github.com:mj41/stai-tools-src.git",
+			"type": "git-repo"
+		},
+		{
+			"name": "stai-temp",
+			"git-repo": null,
+			"type": "local-git-repo"
+		}
+	]
+}

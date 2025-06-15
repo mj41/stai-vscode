@@ -1,0 +1,35 @@
+{
+	"folders": {{.Folders}},
+	"settings": {
+		"chat.tools.autoApprove": true,
+		"chat.editing.autoAcceptDelay": 1,
+		"terminal.integrated.copyOnSelection": true,
+		"terminal.integrated.shellIntegration.enabled": false,
+		"terminal.integrated.allowChords": false,
+		"terminal.integrated.confirmOnExit": "never",
+		"terminal.integrated.confirmOnKill": "never",
+		"files.associations": {
+			"*.noai.*": "noai",
+			"*.noai": "noai"
+		},
+		"github.copilot.enable": {
+			"*": true,
+			"plaintext": false,
+			"markdown": true,
+			"scminput": false,
+			"noai": false
+		},
+		"terminal.integrated.profiles.linux": {
+			"aiterm-interactive": {
+				"path": "{{.BaseWorkDir}}/stai-tools/bin/aiterm",
+				"args": ["--colors"],
+				"env": {
+					"AITASK_TEMP": "{{.BaseWorkDir}}/stai-temp/aitsk",
+					"AITERM_PATH": "{{.BaseWorkDir}}/stai-tools/bin/aicmd"
+				},
+				"icon": "terminal-bash"
+			}
+		},
+		"terminal.integrated.defaultProfile.linux": "aiterm-interactive"
+	}
+}

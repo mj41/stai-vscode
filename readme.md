@@ -50,9 +50,9 @@ code-insiders ~/work-stai/vscode/stai-all.code-workspace
   - `~/work-stai/vscode`
   - `~/work-stai/stai-temp`
   - `~/work-stai/stai-temp/aitsk`
-- `ws-config-gen` initializes git repository in `~/work-stai/stai-temp` and creates an empty initial commit with `readme.md` file based on embedded readme template (see [readme.md.tmpl](./internal/templates/readme.md.tmpl) for reference)
-- `ws-config-gen` clones git repositories mentioned in embedded configuration (see [repos.json](./internal/config/repos.json) for reference)
-- `ws-config-gen` creates a workspace file `~/work-stai/vscode/stai-all.code-workspace` based on embedded configuration and workspace template (see [stai-all.code-workspace.tmpl](./internal/templates/stai-all.code-workspace.tmpl) for reference). Paths to workspace folders are relative to `~/work-stai/vscode` directory
+- `ws-config-gen` initializes git repository in `~/work-stai/stai-temp` and creates an empty initial commit with `readme.md` file based on embedded readme template (see [readme.md.tmpl](./cmd/ws-config-gen/templates/readme.md.tmpl) for reference)
+- `ws-config-gen` clones git repositories mentioned in embedded configuration (see [repos.json](./cmd/ws-config-gen/config/repos.json) for reference)
+- `ws-config-gen` creates a workspace file `~/work-stai/vscode/stai-all.code-workspace` based on embedded configuration and workspace template (see [stai-all.code-workspace.tmpl](./cmd/ws-config-gen/templates/stai-all.code-workspace.tmpl) for reference). Paths to workspace folders are relative to `~/work-stai/vscode` directory
 - User opens `~/work-stai/vscode/stai-all.code-workspace` in Visual Studio Code Insiders
 - User starts to assign tasks to AI (Copilot)
 
